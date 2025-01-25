@@ -1,0 +1,188 @@
+.home-container{
+    width: 100vw;
+    height: 60vh;
+    background: url('/assets/job-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+  
+  /* Styling for the individual job cards */
+  .home-card {
+    background-color: #f4f4f9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .home-card:hover {
+    transform: scale(0.98); 
+  }
+  
+  /* Job title styling */
+   .home-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 255);
+    margin-bottom: 10px;
+  } 
+  
+  /* Job description and location styling */
+   .home-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  } 
+
+   .home-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-icon{
+    color: rgb(0, 0, 255);
+
+  } 
+
+   .home-card a,
+  .home-content-search button {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-family: "Arima", serif;
+    text-decoration: none;
+  } 
+
+   .home-content-search button:hover,
+  .home-card a:hover,
+  .home-content-btn button:hover{
+    color: rgb(0, 0, 255);
+    background-color: rgb(191, 191, 250);
+  }
+   
+
+   .home-contents{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 80%;
+    margin: 30px auto;
+    gap: 20px;
+  } 
+
+  /* Styling for the pagination container */
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+   .home-content-btn{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .home-content-btn button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: rgb(0, 0, 255);
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    font-family: "Arima", serif;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+  } 
+
+ 
+.home-content-search input{
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(0, 0, 255);
+  color: rgb(0, 0, 255);
+} 
+
+
+
+  /* Pagination buttons styling */
+   .paginationBtns, .nextBtn {
+    padding: 10x 20px;
+    color: rgb(0, 0, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    
+  } 
+  
+  .paginationBtns:hover, .nextBtn:hover {
+    color: #0056b3;
+  }
+  
+  /* Active page button styling */
+  .paginate-active {
+    background-color: rgb(186, 186, 247);
+    font-weight: bold;
+
+  }
+  
+  /* Styling for the pagination container */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .pagination li{
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: rgb(0, 0, 255);
+    transition: 0.3s;
+    list-style: none;
+    cursor: pointer;
+  } 
+  
+
+  /* Adjust the pagination buttons for mobile responsiveness */
+  @media (max-width: 768px) {
+    .home-contents{
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+
+    } 
+   
+     .pagination li{
+      padding: 5px 8px;
+      margin: 0px;
+
+    } 
+
+    .home-card div {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  
+  }
+  

@@ -1,0 +1,63 @@
+.application-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.application-wrapper .btn {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 255);
+    transition: 0.5s;
+}
+
+.application-wrapper .btn:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 255);
+}
+
+
+.application-wrapper form div {
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 255);
+
+}
+
+.application-wrapper form div h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.application-wrapper input{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 255);
+    outline: none;
+    padding: 10px ;
+    transition: 0.5s;
+    border-radius: 5px;
+    resize: none;
+    color: rgb(0, 0, 255);
+    font-size: 1.1rem;
+
+}
+
+::placeholder{
+    color: rgb(121, 121, 248);
+}
+.application-wrapper input:focus{
+    border: 1px solid rgb(0, 0, 255);
+}
+
+@media (max-width: 768px) {
+
+    .application-wrapper form  {
+        width: 80%;
+        margin:  0 auto;
+    }
+    
+}

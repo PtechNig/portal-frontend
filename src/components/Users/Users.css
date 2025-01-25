@@ -1,0 +1,79 @@
+.user-wrapper{
+    padding: 20px;
+    /* background-color: rgb(17, 17, 85); */
+    background-color: rgb(240, 240, 247);;
+
+}
+.user-title{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+    color: rgb(2, 2, 119);
+    border-bottom: 2px solid rgb(2, 2, 119);
+}
+
+.user-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.user-table th, .user-table td{
+    padding: 10px 30px;
+    text-align: left;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.user-table tr {
+ transition: 0.5s;
+}
+.user-table tr:hover{
+    background-color: rgb(228, 228, 241);
+}
+
+.user-table thead{
+    color: rgb(0, 0, 255);
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+
+    .user-table th {
+        display: none;
+    }
+
+    /* Make table rows behave like cards */
+    .user-table td {
+        display: block;
+        margin: 10px 0; 
+        text-align: left; 
+        padding: 10px 20px; 
+        position: relative; 
+        color: rgb(2, 2, 119);
+        transition: color 0.5s;
+    }
+
+  
+
+    /* Add a label for each data cell using the 'before' pseudo-element */
+    .user-table td::before {
+        content: attr(data-label); /* Use the 'data-label' attribute for column names */
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Add spacing between rows */
+    .user-table tr {
+        display: block;
+        margin-bottom: 20px; 
+        border: 1px solid rgb(221, 221, 221); 
+        border-radius: 10px; 
+        padding: 10px; 
+        background-color: rgb(198, 198, 199); 
+
+    }
+}

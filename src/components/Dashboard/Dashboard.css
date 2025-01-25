@@ -1,0 +1,126 @@
+.dashboard-wrapper{
+    background-color: rgb(17, 17, 85);
+}
+
+.dashboard-wrapper nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+.dashboard-wrapper .toggle{
+    display: none;
+}
+
+.dashboard-notification{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.dashboard-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 20px;
+    gap: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    padding:30px 20px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(0.98);
+}
+
+.card div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card div h4{
+    text-transform: uppercase;
+}
+
+.card p{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.prod {
+    background-color: red;
+}
+
+.cat {
+    background-color: blue;
+}
+
+.cust{
+    background-color: green;
+}
+
+.alert{
+    background-color: rgb(134, 99, 1);
+
+}
+
+.charts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .charts{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .notes{
+        margin-left: 20px;
+    }
+
+    .dashboard-wrapper nav {
+        width: 70%;
+        padding:  0px;
+        font-size: 1.2rem;
+        margin: 10px auto;
+    }
+    .dashboard-notification{
+
+        gap: 10px;
+
+    }
+
+    .dashboard-wrapper .toggle{
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        margin-left: -30px ;
+    }
+
+
+
+
+    
+}
