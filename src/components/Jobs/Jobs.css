@@ -129,6 +129,11 @@
     }
 
     .job input{
-        width: 80%;
+        width: 100%;
+    }
+
+    .job-content-search input,
+    .job-content-search button {
+        padding: 5px 10px;
     }
 }
