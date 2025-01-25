@@ -23,7 +23,7 @@
 .form-wrapper .register{
     position: absolute;
     transition:  0.5s ease;
-    height: 520px;
+    /* height: 520px; */
     transform: translateX(-420px);
 }
 
