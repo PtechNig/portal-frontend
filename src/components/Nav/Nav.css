@@ -54,12 +54,12 @@
   }
 
   .nav-container h1{
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
 
   .nav-links{
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
     justify-content: space-around;
 }
   }
