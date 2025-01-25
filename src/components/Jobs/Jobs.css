@@ -113,7 +113,13 @@
         width: 100%;
     }
 
-    ..job-content-search{
+    .job-content-search{
         display: none;
+    }
+
+    .user-title{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
     }
 }
