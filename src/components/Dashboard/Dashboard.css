@@ -86,6 +86,15 @@
     display: none;
 }
 
+.notfound{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.notfound h1{
+    font-size: 3rem;
+}
+
 @media (max-width: 768px) {
 
     .charts{

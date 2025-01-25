@@ -31,7 +31,7 @@ const Jobs = () => {
       const changePage = ({ selected }) => setPageNumber(selected);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/allJobs')
+    axios.get('https://portal-backend-n73h.onrender.com/allJobs')
     .then(res => {
       setData(res.data.data.jobs)
       setOriginalData(res.data.data.jobs)

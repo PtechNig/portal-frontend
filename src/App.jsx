@@ -15,7 +15,8 @@ import OtpVerification from './components/PasswordReset/OtpVerification';
 import ForgetPassword from './components/PasswordReset/ForgetPassword';
 import Context from './components/Context/Context';
 import ContextProvider from './components/Context/ContextProvider';
-
+import NotFound from './components/Dashboard/NotFound';
+NotFound
 
 
 
@@ -39,7 +40,7 @@ const router = createBrowserRouter(
         </Route>
 
       </Route>
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
 
     </>
   )

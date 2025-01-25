@@ -7,7 +7,7 @@ const Users = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:8080/allUsers')
+    axios.get('https://portal-backend-n73h.onrender.com/allUsers')
     .then(res => {
       setData(res.data.data.users)
       console.log(res.data.data.users)
