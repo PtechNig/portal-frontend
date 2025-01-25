@@ -112,4 +112,8 @@
     table {
         width: 100%;
     }
+
+    ..job-content-search{
+        display: none;
+    }
 }

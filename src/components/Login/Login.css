@@ -151,6 +151,11 @@ form .links:hover{
 
   }
 
+  form .remember-me{
+    flex-direction: column;
+    
+}
+
 
 
 }
