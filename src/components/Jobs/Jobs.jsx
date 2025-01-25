@@ -47,7 +47,7 @@ const Jobs = () => {
   };
   return (
     <div className='user-wrapper'>
-      <div className='user-title'>
+      <div className='user-title job'>
         <div>
           <h3>Jobs</h3>
           <BsJournalText className='user-icon' />

@@ -76,6 +76,11 @@
         display: none;
     }
 
+    .job-table{
+        width: 80%;
+        margin: 0 auto;
+    }
+
     /* Make table rows behave like cards */
     .job-table td {
         display: block;
@@ -106,6 +111,7 @@
         border-radius: 10px; 
         padding: 10px; 
         background-color: rgb(198, 198, 199); 
+        
 
     }
 
@@ -120,6 +126,9 @@
     .user-title{
         width: 90%;
         margin: 0 auto;
-        flex-direction: column;
+    }
+
+    .job input{
+        width: 50%;
     }
 }
