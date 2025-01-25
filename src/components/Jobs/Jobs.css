@@ -77,7 +77,7 @@
     }
 
     .job-table{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -129,6 +129,6 @@
     }
 
     .job input{
-        width: 50%;
+        width: 80%;
     }
 }

@@ -58,8 +58,8 @@
   }
 
   .nav-links{
-    flex-direction: column;
-    gap: 0px;
+    
+    gap: 5px;
     justify-content: space-around;
 }
   }
