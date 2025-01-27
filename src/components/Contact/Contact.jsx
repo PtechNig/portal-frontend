@@ -4,7 +4,7 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useNavigate } from 'react';
 import axios from 'axios';
 
 
@@ -13,7 +13,7 @@ const Contact = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-
+    const navigate = useNavigate()
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -24,6 +24,7 @@ const Contact = () => {
         axios.post('https://portal-backend-n73h.onrender.com/contact', user)
         .then(res => {
             alert(res.data.message)
+            navigate('/home')
         })
         .catch(err => {
             alert(err.data.message)

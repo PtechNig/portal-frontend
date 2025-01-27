@@ -36,8 +36,6 @@ const OtpVerification = () => {
         })
         .catch(err => {
             alert(err.data.message)
-            // console.log(err.data.message)
-
             
         })
     }
