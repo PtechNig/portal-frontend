@@ -23,26 +23,24 @@ NotFound
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Home />} >
-        <Route path="login" element={<Login />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="application" element={<Application />} />
-        <Route path="forgetpassword" element={<ForgetPassword />} />
-        <Route path="otpverification" element={<OtpVerification />} />
-        <Route path="passwordReset/:id" element={<PasswordReset />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/application" element={<Application />} />
+      <Route path="/forgetpassword" element={<ForgetPassword />} />
+      <Route path="/otpverification" element={<OtpVerification />} />
+      <Route path="/passwordReset/:id" element={<PasswordReset />} />
 
-        <Route element={<ProtectedRoutes />} >
+      <Route element={<ProtectedRoutes />} >
 
-          <Route path="/dashboard" element={<DashboardLayout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="jobs" element={<Jobs />} />
-            <Route path="users" element={<Users />} />
-          </Route>
-
+        <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="jobs" element={<Jobs />} />
+          <Route path="users" element={<Users />} />
         </Route>
-        <Route path="*" element={<NotFound />} />
 
       </Route>
+        <Route path="*" element={<NotFound />} />
 
     </>
   )
@@ -52,13 +50,13 @@ function App() {
 
   return (
     <>
-      <ContextProvider>
-        <RouterProvider router={router} />;
-      </ContextProvider>
+        <ContextProvider>
+          <RouterProvider router={router} />;
+        </ContextProvider>
+      
 
-
-
-
+  
+      
 
     </>
   )
