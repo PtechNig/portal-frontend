@@ -3,7 +3,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
 import { motion } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -13,7 +13,7 @@ const Contact = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-    const navigate = useNavigate()
+    
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -24,7 +24,7 @@ const Contact = () => {
         axios.post('https://portal-backend-n73h.onrender.com/contact', user)
         .then(res => {
             alert(res.data.message)
-            navigate('/home')
+            window.location.reload()
         })
         .catch(err => {
             alert(err.data.message)
@@ -33,7 +33,7 @@ const Contact = () => {
 
     return (
         <div id='contact' className='contact-wrapper'>
-
+  
             <div className='contact-title'>
                 <h1>Get in touch</h1>
             </div>
