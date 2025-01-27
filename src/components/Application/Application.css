@@ -53,6 +53,44 @@
     border: 1px solid rgb(0, 0, 255);
 }
 
+/* Remove border from select input */
+select {
+    border: none;
+    background-color: transparent; /* Make background transparent if needed */
+    color: #333; /* Change text color */
+    font-size: 16px; /* Change font size */
+    font-family: Arial, sans-serif; /* Set custom font */
+    padding: 10px; /* Add padding */
+    appearance: none; /* Remove default browser styling (works on most browsers) */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+  }
+  
+  /* Custom arrow */
+  select::-ms-expand {
+    display: none; /* Remove default arrow for Internet Explorer */
+  }
+  
+  /* Custom styling for the container of select */
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Add custom arrow */
+  .select-wrapper::after {
+    content: '▼'; /* You can use any character for the arrow */
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent the arrow from blocking the click */
+  }
+  
+
+
 @media (max-width: 768px) {
 
     .application-wrapper form  {
